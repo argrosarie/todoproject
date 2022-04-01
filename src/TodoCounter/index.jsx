@@ -6,8 +6,10 @@ import './TodoCounter.css'
 const TodoCounter = () => {
    const { totalTodos, completedTodos } = React.useContext(TodoContext)
     return (
-       
-        <h2 className="TodoCounter">Completaste {completedTodos} toDos de {totalTodos}</h2>
+       <div>
+        <h1>Welcome to your ToDoApp</h1>
+        <h2 className="TodoCounter">You finished {completedTodos} ToDos of {totalTodos}</h2>
+        </div>
     )
 }
 

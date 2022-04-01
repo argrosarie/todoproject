@@ -27,9 +27,9 @@ function AppUI() {
 
      
           <TodoList>
-            {error && <p>Desespérate, hubo un error...</p>}
-            {loading && <p>Estamos cargando, no desesperes...</p>}
-            {(!loading && !searchedTodos.length) && <p>¡Crea tu primer TODO!</p>}
+            {error && <p>Ups! There is an error</p>}
+            {loading && <p>Loading...</p>}
+            {(!loading && !searchedTodos.length) && <p>Create your first ToDo!</p>}
             
             {searchedTodos.map(todo => (
               <TodoItem
